@@ -10,7 +10,7 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git clone 'https://github.com/thehomelabguybiz/protfolio'
+                git 'https://github.com/thehomelabguybiz/protfolio'
             }
         }
 
