@@ -20,14 +20,14 @@ pipeline {
             }
         }
 
-        stage('Stop Old Container') {
-            steps {
-                sh '''
-                docker stop $CONTAINER_NAME || true
-                docker rm $CONTAINER_NAME || true
-                '''
-            }
-        }
+//        stage('Stop Old Container') {
+//            steps {
+//                sh '''
+//                docker stop $CONTAINER_NAME || true
+//                docker rm $CONTAINER_NAME || true
+//                '''
+//            }
+//        }
 
         stage('Run New Container') {
             steps {
