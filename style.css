@@ -1,0 +1,56 @@
+body {
+    background-color: #1a1a2e; /* Dark SRE Blue */
+    color: #e9e9e9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background: #16213e;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    border: 1px solid #0f3460;
+}
+
+h1 { color: #00d2ff; }
+h2 { color: #9dce6b; }
+
+.info-card {
+    background: #0f3460;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+button {
+    background: #00d2ff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #1a1a2e;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #9dce6b;
+    transform: scale(1.05);
+}
+
+#statusMessage {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #ffd700;
+}
+
+.footer {
+    font-size: 0.8rem;
+    color: #533483;
+}
