@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = "Test-build"
+        IMAGE_NAME = "test-build"
         CONTAINER_NAME = "test-pipeline"
     }
 
