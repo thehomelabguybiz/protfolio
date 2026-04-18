@@ -1,13 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Test Page</title>
+    <meta charset="UTF-8">
+    <title>SRE Portfolio Test</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>It works </h1>
-  <h2>Hello Pradipta Chatterjee </h2>
-  <h3>You can edit this webpage with editing the index file in this repo and start a build in jenkins test pipeline</h3>
-  <h4>added option in docker file so now if any css or js fiels put in this repor and linked in index will also work on build</h4>
-  <p>This is a test index file.</p>
+    <div class="container">
+        <h1>It works! 🚀</h1>
+        <h2>Hello Pradipta Chatterjee</h2>
+        
+        <div class="info-card">
+            <h3>Automated Deployment Success</h3>
+            <p>Edit the index file in this repo and trigger the <strong>Jenkins Test Pipeline</strong> to see changes live.</p>
+            <p>CSS and JS are now bundled via Docker.</p>
+        </div>
+
+        <button id="testButton">Click for JS Test</button>
+        <p id="statusMessage"></p>
+        
+        <p class="footer">Environment: Proxmox | Docker | Jenkins</p>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
