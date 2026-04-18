@@ -8,11 +8,11 @@ pipeline {
 
     stages {
 
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/thehomelabguybiz/protfolio'
-            }
-        }
+       // stage('Checkout') {
+       //     steps {
+       //         git 'https://github.com/thehomelabguybiz/protfolio'
+       //     }
+       // }
 
         stage('Build Docker Image') {
             steps {
