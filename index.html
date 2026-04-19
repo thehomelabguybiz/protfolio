@@ -2,25 +2,106 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>SRE Portfolio Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Home Lab Guy | Web Development</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <h1>It works! 🚀</h1>
-        <h2>Hello Pradipta Chatterjee</h2>
-        
-        <div class="info-card">
-            <h3>Automated Deployment Success</h3>
-            <p>Edit the index file in this repo and trigger the <strong>Jenkins Test Pipeline</strong> to see changes live.</p>
-            <p>CSS and JS are now bundled via Docker.</p>
-        </div>
 
-        <button id="testButton">Click for JS Test</button>
-        <p id="statusMessage"></p>
-        
-        <p class="footer">Environment: Proxmox | Docker | Jenkins</p>
-    </div>
+    <nav id="navbar">
+        <div class="nav-content">
+            <div class="logo">HomeLab<span>Dev</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#why-us">Why Us</a></li>
+                <li><a href="#contact" class="btn-nav">Get a Quote</a></li>
+            </ul>
+            <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content reveal">
+            <h1>Best Price. <br><span class="gradient-text">Premium Quality.</span></h1>
+            <p>We build stunning, high-performance websites that don't break the bank. Elevate your online presence with designs that convert visitors into loyal customers.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">Start Your Project</a>
+                <a href="#services" class="btn btn-secondary">Explore Our Work</a>
+            </div>
+        </div>
+        <div class="hero-graphic reveal">
+            <div class="floating-element shape-1"></div>
+            <div class="floating-element shape-2"></div>
+            <div class="glass-card">
+                <i class="fas fa-code"></i>
+                <h3>Clean Code</h3>
+            </div>
+            <div class="glass-card right">
+                <i class="fas fa-rocket"></i>
+                <h3>Fast Loading</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="section-header reveal">
+            <h2>What We Do</h2>
+            <p>Everything you need to succeed online, crafted with precision.</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card reveal">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Custom Web Design</h3>
+                <p>Tailor-made websites designed to perfectly match your brand's identity and goals.</p>
+            </div>
+            <div class="service-card reveal">
+                <i class="fas fa-shopping-cart"></i>
+                <h3>E-Commerce Solutions</h3>
+                <p>Powerful online stores built to maximize sales and provide a seamless shopping experience.</p>
+            </div>
+            <div class="service-card reveal">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Responsive UI/UX</h3>
+                <p>Flawless experiences across all devices, ensuring your site looks great on phones and desktops alike.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="contact-container reveal">
+            <div class="contact-info">
+                <h2>Ready to bring your vision to life?</h2>
+                <p>Let's build something amazing together. We guarantee the best work at unbeatable prices.</p>
+                <div class="contact-method">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>Email Us Directly</h4>
+                        <a href="mailto:purchese@thehomelabguy.com" class="email-link">purchese@thehomelabguy.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form-container">
+                <form class="contact-form" onsubmit="event.preventDefault(); alert('In a real environment, this would send an email to purchese@thehomelabguy.com!');">
+                    <div class="input-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="input-group">
+                        <textarea placeholder="Tell us about your project..." rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary submit-btn">Send Message <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 The Home Lab Guy. All rights reserved.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
