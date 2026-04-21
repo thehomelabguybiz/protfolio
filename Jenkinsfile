@@ -2,8 +2,8 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = "test-build"
-        CONTAINER_NAME = "test-pipeline"
+        IMAGE_NAME = "test-build-dev"
+        CONTAINER_NAME = "test-pipeline-dev"
     }
 
     stages {
@@ -32,7 +32,7 @@ pipeline {
         stage('Run New Container') {
             steps {
                 sh '''
-                docker run -d -p 80:80 --name $CONTAINER_NAME $IMAGE_NAME
+                docker run -d -p 85:80 --name $CONTAINER_NAME $IMAGE_NAME
                 '''
             }
         }
