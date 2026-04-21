@@ -1,5 +1,7 @@
 pipeline {
-    agent any
+    agent {
+        label "Local-deploy-server"
+    }
 
     environment {
         IMAGE_NAME = "test-build-dev"
