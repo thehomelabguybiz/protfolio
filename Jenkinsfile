@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        lable 'Local-deploy-server'
+        label 'Local-deploy-server'
     }
 
     environment {
